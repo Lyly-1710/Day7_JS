@@ -57,9 +57,26 @@ found(array2)
 
 //forEach()
 
+const array1 = [1, 3, 5];
+
+function found(array) {
+  array.forEach(element => {
+    if (element % 5 === 0) {
+      console.log(element)
+    }
+  })
+}
+found(array1);
 
 //join()
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 const num = [1, 2, 3]
 console.log(fruits.join())
 console.log(num.join())
+
+//map()
+const array3 = [-1, 4, 9, -16];
+
+const map1 = array3.map((x) => Math.abs(x));
+console.log(map1);
+
